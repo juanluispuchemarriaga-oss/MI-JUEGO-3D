@@ -1,3 +1,4 @@
 {"name":"mi-juego-3d","version":"1.0.0","private":true,
-"scripts":{"prep":"mkdir -p www && cp node_modules/three/build/three.module.js www/three.module.js"},
-"dependencies":{"@capacitor/android":"^6.1.2","@capacitor/cli":"^6.1.2","@capacitor/core":"^6.1.2","three":"0.160.0"}}
+"scripts":{"prep":"mkdir -p www && esbuild src/main.js --bundle --minify --format=iife --outfile=www/game.js"},
+"dependencies":{"@capacitor/android":"^6.1.2","@capacitor/cli":"^6.1.2","@capacitor/core":"^6.1.2","three":"0.160.0"},
+"devDependencies":{"esbuild":"0.21.5"}}
